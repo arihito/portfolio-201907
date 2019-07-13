@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700");
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -300,9 +305,71 @@ img::-moz-selection {
   }
 }
 
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
+#produce .bg-primary {
+  background: #830030 url("../img/main/dot.gif") 0 0 repeat !important;
+}
+
+#produce .bg-secondary {
+  background-color: #cb5208 !important;
+}
+
+#produce .bg-thirdary {
+  background-color: #730028 !important;
+}
+
+#produce .bg-fourthry {
+  background-color: #ffc366 !important;
+}
+
+#produce .bg-gray {
+  background-color: #868e96 !important;
+}
+
+#produce .bgimg01 {
+  background: url("../img/produce/room.jpg") center center no-repeat/cover;
+}
+
+#produce .bgimg02 {
+  background: url("../img/produce/book.jpg") center center no-repeat/cover;
+}
+
+#produce .bgimg03 {
+  background: url("../img/produce/device.png") center center no-repeat/60%;
+}
+
+#produce .bgimg04 {
+  background: url("../img/produce/class.jpg") center center no-repeat/cover;
+}
+
+#produce .bgimg05 {
+  background: url("../img/produce/lifework.png") center center no-repeat/60%;
+}
+
+#produce .project-text {
+  padding: 5rem;
+}
+
+#produce .project-text .text-white {
+  position: relative;
+  line-height: 2.4;
+  text-align: left;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8), 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#produce .project-text .text-white::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 92%;
+  position: absolute;
+  left: -5rem;
+  top: 10px;
+  background-color: #cb5208;
+}
+
+#produce .no-gutters:nth-of-type(2) .text-white::after,
+#produce .no-gutters:nth-of-type(5) .text-white::after {
+  background-color: #830030;
 }
 
 #portfolio .portfolio-item {

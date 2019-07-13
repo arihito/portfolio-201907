@@ -1,0 +1,38 @@
+// Styling for the self produce section
+#produce {
+	.bg-primary {background: $primary url("../img/main/dot.gif") 0 0 repeat!important;}
+	.bg-secondary {background-color: $secondary!important;}
+	.bg-thirdary {background-color: $thirdary!important;}
+	.bg-fourthry {background-color: $fourthry!important;}
+	.bg-gray {background-color: $gray-600!important;}
+
+	.bgimg01 {background: url("../img/produce/room.jpg") center center no-repeat / cover;}
+	.bgimg02 {background: url("../img/produce/book.jpg") center center no-repeat / cover;}
+	.bgimg03 {background: url("../img/produce/device.png") center center no-repeat / 60%;}
+	.bgimg04 {background: url("../img/produce/class.jpg") center center no-repeat / cover;}
+	.bgimg05 {background: url("../img/produce/lifework.png") center center no-repeat / 60%;}
+
+	.project-text {
+		padding: 5rem;
+		.text-white {
+			position: relative;
+			line-height: 2.4;
+			text-align: left;
+			text-shadow: 0 0 6px rgba(0,0,0, .8), 0 0 3px rgba(0,0,0, .5);
+			&::after {
+				content: "";
+				display: block;
+				width: 10px;
+				height: 92%;
+				position: absolute;
+				left: -5rem;
+				top: 10px;
+				background-color: $secondary;
+			}
+		}
+	}
+	.no-gutters:nth-of-type(2) .text-white::after,
+	.no-gutters:nth-of-type(5) .text-white::after {
+		background-color: $primary;
+	}
+}
