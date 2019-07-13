@@ -1,0 +1,114 @@
+// Styling for the Product section
+
+#product {
+  .section-subheading {
+    line-height: 2;
+    .fas {
+      padding: 0 5px 0 5px;
+    }
+    .fa-folder:nth-of-type(1) {color: $primary;}
+    .fa-folder:nth-of-type(2) {color: $secondary;}
+    .fa-folder:nth-of-type(3) {color: #ccc}
+  }
+}
+
+/* Board */
+.board {
+  position: relative;
+  margin-left: 1%;
+}
+.board-column {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 16%;
+  margin: 0 1.5%;
+  background: #f0f0f0;
+  border-radius: 3px;
+  z-index: 1;
+}
+.board-column.muuri-item-releasing {
+  z-index: 2;
+}
+.board-column.muuri-item-dragging {
+  z-index: 3;
+  cursor: move;
+}
+.board-column-header {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 0 20px;
+  text-align: left;
+  background: #333;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  @include heading-font;
+}
+.board-column-number {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .2), 0 0 1px rgba(255,255,255, .8) inset;
+  line-height: 2;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .board-column-header {
+    text-indent: -1000px;
+  }
+}
+.board-column.front .board-column-header {
+  background: $primary;
+}
+.board-column.back .board-column-header {
+  background: $secondary;
+}
+.board-column.other .board-column-header {
+  background: #aaa;
+}
+.board-column-content {
+  position: relative;
+  border: 10px solid transparent;
+  min-height: 95px;
+}
+.board-item {
+  position: absolute;
+  width: 100%;
+  margin: 5px 0;
+}
+.board-item.muuri-item-releasing {
+  z-index: 9998;
+}
+.board-item.muuri-item-dragging {
+  z-index: 9999;
+  cursor: move;
+}
+.board-item.muuri-item-hidden {
+  z-index: 0;
+}
+.board-item-content {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  @include body-font;
+  -webkit-box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
+}
+@media (max-width: 600px) {
+  .board-item-content {
+    text-align: center;
+  }
+  .board-item-content span {
+    display: none;
+  }
+}
