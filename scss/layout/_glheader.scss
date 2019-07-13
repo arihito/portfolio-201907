@@ -1,0 +1,106 @@
+// Styling for the glheader
+#mainNav.navbar-shrink {
+  background-color: $secondary;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.glheader {
+  text-align: center;
+  color: white;
+  height: 100vh;
+  // background-image: url('../img/header-bg.jpg');
+  // background-repeat: no-repeat;
+  // background-attachment: scroll;
+  // background-position: center center;
+  // background-size: cover;
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background: linear-gradient( 12deg, rgba($primary, .18), rgba($secondary, .18), rgba($thirdary, .36), rgba(white, .36), rgba($primary, .18)) fixed;
+      background-size: 500%;
+      animation: bg-gradient 10s ease infinite;
+      @keyframes bg-gradient {
+        0% {background-position: 14% 0;}
+        50% {background-position: 87% 100%;}
+        100% {background-position: 14% 0;}
+      }
+    }
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .intro-text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: auto;
+      margin: auto;
+      padding: 20em 0;
+      line-height: 1.5;
+      text-align: center;
+      text-shadow: 0 0 20px rgba(0,0,0, .8), 0 0 10px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0, .3);
+      background: url("../img/main/dot.gif") 0 0 repeat;
+      .intro-lead-in {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 60px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 60px;
+        @include heading-font;
+      }
+      .btn {
+        position: relative;
+        z-index: 50;
+      }
+    }
+  }
+}
+@media(min-width:768px) {
+  .glheader {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
