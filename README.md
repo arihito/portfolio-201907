@@ -4,9 +4,9 @@
 
 ## Preview
 
-[![Agency Preview](https://startbootstrap.com/assets/img/screenshots/themes/agency.png)](https://blackrockdigital.github.io/startbootstrap-agency/)
+[![Agency Preview](https://github.com/arihito/portfolio-201907/blob/master/img/readme.jpg)](https://github.com/arihito/portfolio-201907)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-agency/)**
+**[View Live Preview](http://actlink.co.jp/portfolio/)**
 
 ## Status
 
@@ -19,10 +19,9 @@
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/agency/)
-* Install via npm: `npm i startbootstrap-agency`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-agency.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-agency)
+* [Download the latest release on Start PORTFOLIO](https://github.com/arihito/portfolio-201907/)
+* Clone the repo: `git clone https://github.com/arihito/portfolio-201907.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/arihito/portfolio-201907/archive/master.zip)
 
 ## Usage
 
