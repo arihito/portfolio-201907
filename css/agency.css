@@ -330,18 +330,22 @@ img::-moz-selection {
 }
 
 #produce .bgimg02 {
-  background: url("../img/produce/book.jpg") center center no-repeat/cover;
+  background: url("../img/produce/logos.png") center center no-repeat/60%;
 }
 
 #produce .bgimg03 {
-  background: url("../img/produce/device.png") center center no-repeat/60%;
+  background: url("../img/produce/book.jpg") top center no-repeat/cover;
 }
 
 #produce .bgimg04 {
-  background: url("../img/produce/class.jpg") center center no-repeat/cover;
+  background: url("../img/produce/device.png") center center no-repeat/60%;
 }
 
 #produce .bgimg05 {
+  background: url("../img/produce/class.jpg") center center no-repeat/cover;
+}
+
+#produce .bgimg06 {
   background: url("../img/produce/lifework.png") center center no-repeat/60%;
 }
 
@@ -383,6 +387,11 @@ img::-moz-selection {
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
+}
+
+#portfolio .portfolio-item .portfolio-link.shadow {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -765,6 +774,11 @@ img::-moz-selection {
   color: #666;
   font-size: 18px;
   line-height: 2;
+  text-align: justify;
+}
+
+#skill .info i {
+  margin: 0 5px;
 }
 
 #skill .table {
@@ -780,6 +794,75 @@ img::-moz-selection {
 #skill .table th {
   background-color: #eee;
   vertical-align: middle;
+}
+
+#skill .container-fluid {
+  margin-top: 20px;
+  max-width: 1920px;
+}
+
+#skill .container-fluid .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#skill .container-fluid .portfolio-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/main/dot.gif") 0 0 repeat;
+}
+
+#skill .container-fluid .portfolio-box .portfolio-box-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(131, 0, 48, 0.9);
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  text-align: center;
+  z-index: 10;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+#skill .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#skill .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#skill .container-fluid .portfolio-box .portfolio-box-caption .project-name i.fab, #skill .container-fluid .portfolio-box .portfolio-box-caption .project-name i.fas {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+#skill .container-fluid .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
 }
 
 .skill {

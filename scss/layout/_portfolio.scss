@@ -9,6 +9,9 @@
       max-width: 400px;
       margin: 0 auto;
       cursor: pointer;
+      &.shadow {
+        box-shadow: 0 0 10px rgba(0,0,0, .5), 0 0 5px rgba(0,0,0, .3), 0 0 3px rgba(0,0,0, .2);
+      }
       .portfolio-hover {
         position: absolute;
         width: 100%;
