@@ -39,4 +39,24 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // birthday calcurator
+  var yourBirthDay = {
+      year: 1971,
+      month: 11,
+      date: 10
+    };
+    // Dateインスタンスに変換
+  var birthDate = new Date(yourBirthDay.year, yourBirthDay.month - 1, yourBirthDay.date);
+    // 文字列に分解
+  var y2 = birthDate.getFullYear().toString().padStart(4, '0');
+  var m2 = (birthDate.getMonth() + 1).toString().padStart(2, '0');
+  var d2 = birthDate.getDate().toString().padStart(2, '0');
+    // 今日の日付
+  var today = new Date();
+  var y1 = today.getFullYear().toString().padStart(4, '0');
+  var m1 = (today.getMonth() + 1).toString().padStart(2, '0');
+  var d1 = today.getDate().toString().padStart(2, '0');
+    // 引き算
+  var age = Math.floor((Number(y1 + m1 + d1) - Number(y2 + m2 + d2)) / 10000);
+  $("#age").text(age);
 })(jQuery); // End of use strict
